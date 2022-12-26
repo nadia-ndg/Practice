@@ -1,0 +1,8 @@
+const getHiddenCard=(cardNumber, hiddenNumber=4)=>{
+  const hiddenPart = '*'.repeat(hiddenNumber);
+  const openPart = cardNumber.slice(-4);
+  return `${hiddenPart}${openPart}`;
+}
+
+
+export default getHiddenCard;
